@@ -1,3 +1,6 @@
+# Мой GitHub
+# https://github.com/hochufoto/DevOps-MDP-39.git
+
 # Вводим имя
 firstName = input("What is your first name? ")
 # Вводим фамилию

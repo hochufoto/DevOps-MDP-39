@@ -1,3 +1,6 @@
+# Мой GitHub
+# https://github.com/hochufoto/DevOps-MDP-39.git
+
 # Запускаем безконечный цикл
 while True:
 # Создаем новый item и заполняем его новыми данными
