@@ -17,8 +17,13 @@ key = "aDuDw1nPuPKZPXgyZIeqa1gPZh7x5mM3"
 while True:
 # Функция ввода даных с клавиатуры
     orig = input("Начальная точка: ")
+# Добовляем команду для выхода из программы
+    if orig == "quit" or orig == "q" or orig == "exit":
+        break
     dest = input("Пункт назначения: ")
-
+# Добовляем команду для выхода из программы
+    if dest == "quit" or dest == "q" or dest == "exit":
+        break
 
 # Собираем ссылку
     url = main_api + urllib.parse.urlencode({
