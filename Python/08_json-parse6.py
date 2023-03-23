@@ -14,7 +14,7 @@ main_api = "https://www.mapquestapi.com/directions/v2/route?"
 key = "aDuDw1nPuPKZPXgyZIeqa1gPZh7x5mM3"
 unit = "k"
 locale = "ru_RU"
-
+print("\n")
 # Запускаем цикл
 while True:
 # Функция ввода даных с клавиатуры
@@ -49,8 +49,9 @@ while True:
         print("Продолжительность поездки:  " + (json_data["route"]["formattedTime"]))
         print("Расстояние: " + str("{:.2f}".format((json_data["route"]["distance"]))) + " Км")
         print("=" * 70 + "\n")
+# Добавляем цикл который проидет по всем маневрам и добавит в переменную each
         for each in json_data["route"]["legs"][0]["maneuvers"]:
             print((each["narrative"]) + " (" + str("{:.2f}".format(each["distance"]) + " Км)"))
         print("=" * 70 + "\n")
     else:
-        print("API status messages" + str(json_data["info"]["messages"]) + "\n")
+        print("API status: " + str(json_status) + ". " + json_data["info"]["messages"][0] + "\n")
