@@ -13,7 +13,9 @@ import requests
 main_api = "https://www.mapquestapi.com/directions/v2/route?"
 key = "aDuDw1nPuPKZPXgyZIeqa1gPZh7x5mM3"
 
+# Запускаем цикл
 while True:
+# Функция ввода даных с клавиатуры
     orig = input("Начальная точка: ")
     dest = input("Пункт назначения: ")
 
